@@ -1,0 +1,42 @@
+body
+{
+margin:0px;
+}
+.border
+{
+border-left:solid 1px #D7E1FF;
+border-right:solid 1px #D7E1FF
+} 
+.a
+{
+font-family:Verdana;
+font-size:12px;
+color:#FFFFFF;
+text-align:center;
+font-weight:bold;
+}
+.borderrig
+{
+border-right:solid 1px  #FFFF00
+}
+.p
+{
+font-family:Arial, Helvetica, sans-serif;
+color:#002E5B;
+font-size:13px
+}
+.headingprofil
+{
+font-family:Arial, Helvetica, sans-serif;
+font-size:14px;
+color:#990000;
+text-align:center
+}
+.radius
+{
+-moz-border-radius:10px
+}
+.select
+{
+width:100px
+}

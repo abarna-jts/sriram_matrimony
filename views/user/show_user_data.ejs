@@ -1,0 +1,1476 @@
+<%- include('header_footer/header') %>
+
+    <ul>
+        <% if (data && data.length) { %>
+            <% data.forEach(user=> { %>
+
+                <div>
+                    <table border="0" cellpadding="0" cellspacing="0" width="976px" align="center">
+                        <tr>
+                            <td>
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tr>
+                                        <td class="Label"
+                                            style="font-weight: 500; text-align: center; font-size:16px; font-weight:bold;">
+                                            <span style="color: Maroon;">
+                                                தில்லை திருமண தகவல் மையம்,
+                                                9.புது தெரு,BSNL பக்கத்தில், செய்யாறு -604407
+                                                Call : 9489331973
+
+                                            </span>
+
+
+                                        </td>
+                                    </tr>
+                                    <tr style="height:7px;">
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                <tr>
+                                                    <td align="left">
+                                                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                            <tr>
+                                                                <td
+                                                                    style="background-color: #FFFFD7; border: 1px solid #D7E1FF;">
+                                                                    <table border="0" cellpadding="0" cellspacing="0"
+                                                                        width="100%">
+                                                                        <tr>
+                                                                            <td class="head" style="width: 140px;"
+                                                                                align="left">
+                                                                                <b style="color: Red;">Reg. No. :</b> <b
+                                                                                    style="font-weight: normal;">
+                                                                                    <span id="Reg_No" class="Label"
+                                                                                        style="text-transform:capitalize;">F11356</span></b>
+                                                                            </td>
+                                                                            <td class="head" align="left">
+                                                                                <b style="color: Red;">Name :</b> <b
+                                                                                    style="font-weight: normal;">
+                                                                                    <span id="Name" class="Label"
+                                                                                        style="text-transform:capitalize;">
+                                                                                        <%= user.name %>
+                                                                                    </span></b>
+                                                                            </td>
+                                                                            <td class="head" style="width: 200px;"
+                                                                                align="left">
+                                                                                <b style="color: Red;">Reg. Month. :</b>
+                                                                                <b style="font-weight: normal;">
+                                                                                    <span id="Reg_Month" class="Label"
+                                                                                        style="text-transform:capitalize;"><%-
+                                                                                            data.birth_date %> 12:00:00
+                                                                                            AM</span></b>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td valign="top">
+                                                                    <table border="0" cellpadding="0" cellspacing="0"
+                                                                        width="100%">
+                                                                        <tr>
+                                                                            <td style="border: 2px solid #D7E1FF;">
+                                                                                <table border="0" cellpadding="0"
+                                                                                    cellspacing="0" width="100%">
+                                                                                    <tr>
+                                                                                        <td valign="top">
+                                                                                            <table border="0"
+                                                                                                cellpadding="0"
+                                                                                                cellspacing="0"
+                                                                                                width="100%">
+                                                                                                <tr>
+                                                                                                    <td class="Label"
+                                                                                                        style="font-weight: bold; color: Green; background-color: #D7E1FF;
+                                                                                                    text-align: left; font-size: 14px;">
+                                                                                                        Bio Data
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td
+                                                                                                        style="border-bottom: 1px solid #D7E1FF; border-right: 1px solid #D7E1FF;">
+                                                                                                        <table
+                                                                                                            border="0"
+                                                                                                            cellpadding="0"
+                                                                                                            cellspacing="0"
+                                                                                                            width="100%">
+                                                                                                            <tr>
+                                                                                                                <td class="Label"
+                                                                                                                    style="border-right: 1px solid #D7E1FF; border-bottom: 1px solid #D7E1FF;
+                                                                                                                color: Green; width: 190px;">
+                                                                                                                    <b
+                                                                                                                        style="font-weight: normal;">Gender-Marital
+                                                                                                                        Status</b>
+                                                                                                                </td>
+                                                                                                                <td
+                                                                                                                    style="border-bottom: 1px solid #D7E1FF;">
+                                                                                                                    <span
+                                                                                                                        id="gender"
+                                                                                                                        class="Label"
+                                                                                                                        style="text-transform:capitalize;">
+                                                                                                                        <%= user.gender
+                                                                                                                            %>
+                                                                                                                    </span><span
+                                                                                                                        id="MaritalStatus"
+                                                                                                                        class="Label"
+                                                                                                                        style="text-transform:capitalize;">
+                                                                                                                        <%= user.marital_status==0? "Unmarried"
+                                                                                                                            : "Married"
+                                                                                                                            %>
+                                                                                                                    </span>
+                                                                                                                </td>
+                                                                                                            </tr>
+                                                                                                            <tr>
+                                                                                                                <td class="Label"
+                                                                                                                    style="border-right: 1px solid #D7E1FF; border-bottom: 1px solid #D7E1FF;
+                                                                                                                color: Green; width: 190px;">
+                                                                                                                    <b
+                                                                                                                        style="font-weight: normal;">DOB-Time-Place</b>
+                                                                                                                </td>
+                                                                                                                <td
+                                                                                                                    style="border-bottom: 1px solid #D7E1FF;">
+                                                                                                                    <span
+                                                                                                                        id="DOB"
+                                                                                                                        class="Label"
+                                                                                                                        style="text-transform:capitalize;">
+                                                                                                                        <%= user.birth_day_of_week
+                                                                                                                            %>
+                                                                                                                    </span><span
+                                                                                                                        id="Time"
+                                                                                                                        class="Label"
+                                                                                                                        style="text-transform:capitalize;">
+                                                                                                                        -
+                                                                                                                        :AM</span><span
+                                                                                                                        id="Place"
+                                                                                                                        class="Label"
+                                                                                                                        style="text-transform:capitalize;">
+                                                                                                                        -
+                                                                                                                        <%= user.birthplace
+                                                                                                                            %>
+                                                                                                                    </span>
+                                                                                                                </td>
+                                                                                                            </tr>
+                                                                                                            <tr>
+                                                                                                                <td class="Label"
+                                                                                                                    style="border-right: 1px solid #D7E1FF; border-bottom: 1px solid #D7E1FF;
+                                                                                                                color: Green; width: 190px;">
+                                                                                                                    <b
+                                                                                                                        style="font-weight: normal;">Religion-Caste-Sub
+                                                                                                                        caste</b>
+                                                                                                                </td>
+                                                                                                                <td
+                                                                                                                    style="border-bottom: 1px solid #D7E1FF;">
+                                                                                                                    <span
+                                                                                                                        id="Religion"
+                                                                                                                        class="Label"
+                                                                                                                        style="text-transform:capitalize;">
+                                                                                                                        <%= user.religion
+                                                                                                                            || "undefind"
+                                                                                                                            %>
+                                                                                                                    </span><span
+                                                                                                                        id="Caste"
+                                                                                                                        class="Label"
+                                                                                                                        style="text-transform:capitalize;">
+                                                                                                                        -
+                                                                                                                        <%= user.caste
+                                                                                                                            || "no data"
+                                                                                                                            %>
+                                                                                                                            </span><span
+                                                                                                                        id="Subcaste"
+                                                                                                                        class="Label"
+                                                                                                                        style="text-transform:capitalize;">
+                                                                                                                        -
+                                                                                                                        <%= user.sub_caste
+                                                                                                                            || "no data"
+                                                                                                                            %>
+                                                                                                                            </span>
+                                                                                                                </td>
+                                                                                                            </tr>
+                                                                                                            <tr>
+                                                                                                                <td class="Label"
+                                                                                                                    style="border-right: 1px solid #D7E1FF; border-bottom: 1px solid #D7E1FF;
+                                                                                                                color: Green; width: 190px;">
+                                                                                                                    <b
+                                                                                                                        style="font-weight: normal;">Gothram-Star-Rasi</b>
+                                                                                                                </td>
+                                                                                                                <td
+                                                                                                                    style="border-bottom: 1px solid #D7E1FF;">
+                                                                                                                    <span
+                                                                                                                        id="Gothram"
+                                                                                                                        class="Label"
+                                                                                                                        style="text-transform:capitalize;"></span><span
+                                                                                                                        id="Star"
+                                                                                                                        class="Label"
+                                                                                                                        style="text-transform:capitalize;">
+                                                                                                                        <%= user.gothram
+                                                                                                                            %>
+                                                                                                                    </span><span
+                                                                                                                        id="Rasi"
+                                                                                                                        class="Label"
+                                                                                                                        style="text-transform:capitalize;">
+                                                                                                                        -
+                                                                                                                        <%= stars[user.nakshatra]
+                                                                                                                            %>
+                                                                                                                            </span>
+                                                                                                                    -
+                                                                                                                    <span>
+                                                                                                                        <%= raasiSigns[user.raasi_sign]
+                                                                                                                            %>
+                                                                                                                    </span>
+                                                                                                                </td>
+                                                                                                            </tr>
+                                                                                                            <tr>
+                                                                                                                <td class="Label"
+                                                                                                                    style="border-right: 1px solid #D7E1FF; border-bottom: 1px solid #D7E1FF;
+                                                                                                                color: Green; width: 190px;">
+                                                                                                                    <b
+                                                                                                                        style="font-weight: normal;">Qualification-Job-Place
+                                                                                                                        of
+                                                                                                                        Job</b>
+                                                                                                                </td>
+                                                                                                                <td
+                                                                                                                    style="border-bottom: 1px solid #D7E1FF;">
+                                                                                                                    <span
+                                                                                                                        id="Qualification1"
+                                                                                                                        class="Label"
+                                                                                                                        style="text-transform:capitalize;">&nbsp;M.Sc
+                                                                                                                        maths</span><span
+                                                                                                                        id="Job"
+                                                                                                                        class="Label"
+                                                                                                                        style="text-transform:capitalize;">
+                                                                                                                    </span><span
+                                                                                                                        id="Place1"
+                                                                                                                        class="Label"
+                                                                                                                        style="text-transform:capitalize;">
+                                                                                                                    </span>
+                                                                                                                </td>
+                                                                                                            </tr>
+                                                                                                            <tr>
+                                                                                                                <td class="Label"
+                                                                                                                    style="border-right: 1px solid #D7E1FF; border-bottom: 1px solid #D7E1FF;
+                                                                                                                color: Green; width: 190px;">
+                                                                                                                    <b
+                                                                                                                        style="font-weight: normal;">Income/month-Height-Complexion</b>
+                                                                                                                </td>
+                                                                                                                <td
+                                                                                                                    style="border-bottom: 1px solid #D7E1FF;">
+                                                                                                                    <span
+                                                                                                                        id="IncomeMonth"
+                                                                                                                        class="Label"
+                                                                                                                        style="text-transform:capitalize;">
+                                                                                                                        <%= user.income
+                                                                                                                            %>
+                                                                                                                            ,
+                                                                                                                    </span><span
+                                                                                                                        id="Height"
+                                                                                                                        class="Label"
+                                                                                                                        style="text-transform:capitalize;">&nbsp;
+                                                                                                                        <%= heights[user.height]
+                                                                                                                            %>
+                                                                                                                            </span><span
+                                                                                                                        id="Complexion"
+                                                                                                                        class="Label"
+                                                                                                                        style="text-transform:capitalize;">-Fair</span>
+                                                                                                                </td>
+                                                                                                            </tr>
+                                                                                                            <tr>
+                                                                                                                <td class="Label"
+                                                                                                                    style="border-right: 1px solid #D7E1FF; border-bottom: 1px solid #D7E1FF;
+                                                                                                                color: Green; width: 190px;">
+                                                                                                                    <b
+                                                                                                                        style="font-weight: normal;">Mother
+                                                                                                                        Tongue-Diet</b>
+                                                                                                                </td>
+                                                                                                                <td
+                                                                                                                    style="border-bottom: 1px solid #D7E1FF;">
+                                                                                                                    <span
+                                                                                                                        id="MotherTongue"
+                                                                                                                        class="Label"
+                                                                                                                        style="text-transform:capitalize;">
+                                                                                                                        <%= user.language
+                                                                                                                            %>
+                                                                                                                    </span><span
+                                                                                                                        id="diet"
+                                                                                                                        class="Label"
+                                                                                                                        style="text-transform:capitalize;">
+                                                                                                                    </span>
+                                                                                                                </td>
+                                                                                                            </tr>
+                                                                                                            <tr>
+                                                                                                                <td class="Label"
+                                                                                                                    style="border-right: 1px solid #D7E1FF; border-bottom: 1px solid #D7E1FF;
+                                                                                                                color: Green; width: 190px;">
+                                                                                                                    <b
+                                                                                                                        style="font-weight: normal;">Disability
+                                                                                                                        (If
+                                                                                                                        any)</b>
+                                                                                                                </td>
+                                                                                                                <td
+                                                                                                                    style="border-bottom: 1px solid #D7E1FF;">
+                                                                                                                    <span
+                                                                                                                        id="Disability"
+                                                                                                                        class="Label"
+                                                                                                                        style="text-transform:capitalize;">
+                                                                                                                        <%= user.physical_status==0?"NO":"Yes"
+                                                                                                                            %>
+                                                                                                                    </span>
+                                                                                                                </td>
+                                                                                                            </tr>
+                                                                                                            <tr>
+                                                                                                                <td class="Label"
+                                                                                                                    style="border-right: 1px solid #D7E1FF; border-bottom: 1px solid #D7E1FF;
+                                                                                                                color: Green; width: 190px;">
+                                                                                                                    <b
+                                                                                                                        style="font-weight: normal;">Parents
+                                                                                                                        Alive-Father's
+                                                                                                                        Job
+                                                                                                                        -
+                                                                                                                        Mother's
+                                                                                                                        Job</b>
+                                                                                                                </td>
+                                                                                                                <td
+                                                                                                                    style="border-bottom: 1px solid #D7E1FF;">
+                                                                                                                    <span
+                                                                                                                        id="FatherAlive_"
+                                                                                                                        class="Label"
+                                                                                                                        style="text-transform:capitalize;">
+                                                                                                                        <%=(user.father_alive==0
+                                                                                                                            &&
+                                                                                                                            user.mother_alive==0)
+                                                                                                                            ? "Yes. Both Alive"
+                                                                                                                            :(user.father_alive==1
+                                                                                                                            &&
+                                                                                                                            user.mother_alive==0)
+                                                                                                                            ? "Mother Alive, Father is not alive"
+                                                                                                                            :(user.father_alive==0
+                                                                                                                            &&
+                                                                                                                            user.mother_alive==1)
+                                                                                                                            ? "Father Alive, Mother is not alive"
+                                                                                                                            :(user.father_alive==1
+                                                                                                                            &&
+                                                                                                                            user.mother_alive==1)
+                                                                                                                            ? "Both are not alive"
+                                                                                                                            : ""
+                                                                                                                            %>
+                                                                                                                            :
+                                                                                                                    </span><span
+                                                                                                                        id="FatherJob"
+                                                                                                                        class="Label"
+                                                                                                                        style="text-transform:capitalize;">
+                                                                                                                        /
+                                                                                                                        அப்பா,
+                                                                                                                        <%= user.father_job
+                                                                                                                            %>
+                                                                                                                            </span><span
+                                                                                                                        id="mothersjob"
+                                                                                                                        class="Label"
+                                                                                                                        style="text-transform:capitalize;">
+                                                                                                                        /
+                                                                                                                        அம்மா,
+                                                                                                                        <%= user.mother_job
+                                                                                                                            %>
+                                                                                                                            </span>
+                                                                                                                </td>
+                                                                                                            </tr>
+                                                                                                        </table>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td class="Label"
+                                                                                                        style="border-bottom: 1px solid #D7E1FF; border-right: 1px solid #D7E1FF;">
+                                                                                                        <table
+                                                                                                            border="0"
+                                                                                                            cellpadding="0"
+                                                                                                            cellspacing="0"
+                                                                                                            width="100%">
+                                                                                                            <tr
+                                                                                                                style="height: 20px; vertical-align: middle;">
+                                                                                                                <td style="width: 150px; border-left: 1px solid #555555; border-top: 1px solid #555555;
+                                                                                                                background-color: #cccccc; text-align: center; font-weight: bold;"
+                                                                                                                    class="Label">
+                                                                                                                    <b
+                                                                                                                        style="font-weight: normal;">Relationship</b>
+                                                                                                                </td>
+                                                                                                                <td style="width: 90px; border-left: 1px solid #555555; border-top: 1px solid #555555;
+                                                                                                                background-color: #cccccc; text-align: center; font-weight: bold;"
+                                                                                                                    class="Label">
+                                                                                                                    <b
+                                                                                                                        style="font-weight: normal;">Elder
+                                                                                                                        Brother</b>
+                                                                                                                </td>
+                                                                                                                <td style="width: 90px; border-left: 1px solid #555555; border-top: 1px solid #555555;
+                                                                                                                background-color: #cccccc; text-align: center; font-weight: bold;"
+                                                                                                                    class="Label">
+                                                                                                                    <b
+                                                                                                                        style="font-weight: normal;">Younger
+                                                                                                                        brother</b>
+                                                                                                                </td>
+                                                                                                                <td style="width: 120px; border-left: 1px solid #555555; border-top: 1px solid #555555;
+                                                                                                                background-color: #cccccc; text-align: center; font-weight: bold;"
+                                                                                                                    class="Label">
+                                                                                                                    <b
+                                                                                                                        style="font-weight: normal;">Elder
+                                                                                                                        Sister</b>
+                                                                                                                </td>
+                                                                                                                <td style="width: 120px; border-left: 1px solid #555555; border-right: 1px solid #555555;
+                                                                                                                background-color: #cccccc; border-top: 1px solid #555555; text-align: center;
+                                                                                                                font-weight: bold;"
+                                                                                                                    class="Label">
+                                                                                                                    <b
+                                                                                                                        style="font-weight: normal;">Younger
+                                                                                                                        Sister</b>
+                                                                                                                </td>
+                                                                                                                <td>&nbsp;
+
+                                                                                                                </td>
+                                                                                                            </tr>
+                                                                                                            <tr
+                                                                                                                style="height: 20px; vertical-align: middle;">
+                                                                                                                <td style="width: 150px; border-left: 1px solid #555555; border-top: 1px solid #555555;
+                                                                                                                text-align: center; background-color: White; font-weight: bold;"
+                                                                                                                    class="Label">
+                                                                                                                    Married
+                                                                                                                </td>
+                                                                                                                <td
+                                                                                                                    style="width: 90px; border-left: 1px solid #555555; border-top: 1px solid #555555;
+                                                                                                                text-align: center;">
+                                                                                                                    <span
+                                                                                                                        id="Label1"
+                                                                                                                        style="text-transform:capitalize;">
+                                                                                                                    </span>
+                                                                                                                </td>
+                                                                                                                <td
+                                                                                                                    style="width: 90px; border-left: 1px solid #555555; border-top: 1px solid #555555;
+                                                                                                                text-align: center;">
+                                                                                                                    <span
+                                                                                                                        id="Label2"
+                                                                                                                        style="text-transform:capitalize;">
+                                                                                                                    </span>
+                                                                                                                </td>
+                                                                                                                <td
+                                                                                                                    style="width: 120px; border-left: 1px solid #555555; border-top: 1px solid #555555;
+                                                                                                                text-align: center;">
+                                                                                                                    <span
+                                                                                                                        id="Label3"
+                                                                                                                        style="text-transform:capitalize;">
+                                                                                                                    </span>
+                                                                                                                </td>
+                                                                                                                <td
+                                                                                                                    style="width: 120px; border-left: 1px solid #555555; border-right: 1px solid #555555;
+                                                                                                                border-top: 1px solid #555555; text-align: center;">
+                                                                                                                    <span
+                                                                                                                        id="Label4"
+                                                                                                                        style="text-transform:capitalize;">
+                                                                                                                    </span>
+                                                                                                                </td>
+                                                                                                                <td>&nbsp;
+
+                                                                                                                </td>
+                                                                                                            </tr>
+                                                                                                            <tr
+                                                                                                                style="height: 20px; vertical-align: middle;">
+                                                                                                                <td style="width: 150px; border-left: 1px solid #555555; border-top: 1px solid #555555;
+                                                                                                                border-bottom: 1px solid #555555; text-align: center; background-color: White;
+                                                                                                                font-weight: bold;"
+                                                                                                                    class="Label">
+                                                                                                                    UnMarried
+                                                                                                                </td>
+                                                                                                                <td
+                                                                                                                    style="width: 90px; border-left: 1px solid #555555; border-top: 1px solid #555555;
+                                                                                                                border-bottom: 1px solid #555555; text-align: center;">
+                                                                                                                    <span
+                                                                                                                        id="Label5"
+                                                                                                                        style="text-transform:capitalize;">1</span>
+                                                                                                                </td>
+                                                                                                                <td
+                                                                                                                    style="width: 90px; border-left: 1px solid #555555; border-top: 1px solid #555555;
+                                                                                                                border-bottom: 1px solid #555555; text-align: center;">
+                                                                                                                    <span
+                                                                                                                        id="Label6"
+                                                                                                                        style="text-transform:capitalize;">
+                                                                                                                    </span>
+                                                                                                                </td>
+                                                                                                                <td
+                                                                                                                    style="width: 120px; border-left: 1px solid #555555; border-top: 1px solid #555555;
+                                                                                                                border-bottom: 1px solid #555555; text-align: center;">
+                                                                                                                    <span
+                                                                                                                        id="Label7"
+                                                                                                                        style="text-transform:capitalize;">
+                                                                                                                    </span>
+                                                                                                                </td>
+                                                                                                                <td
+                                                                                                                    style="width: 120px; border-left: 1px solid #555555; border-right: 1px solid #555555;
+                                                                                                                border-bottom: 1px solid #555555; border-top: 1px solid #555555; text-align: center;">
+                                                                                                                    <span
+                                                                                                                        id="Label8"
+                                                                                                                        style="text-transform:capitalize;">
+                                                                                                                    </span>
+                                                                                                                </td>
+                                                                                                                <td>&nbsp;
+
+                                                                                                                </td>
+                                                                                                            </tr>
+                                                                                                        </table>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td
+                                                                                                        style="border-bottom: 1px solid #D7E1FF; border-right: 1px solid #D7E1FF;">
+                                                                                                        <table
+                                                                                                            border="0"
+                                                                                                            cellpadding="0"
+                                                                                                            cellspacing="0"
+                                                                                                            width="100%">
+                                                                                                            <tr>
+                                                                                                                <td class="Label"
+                                                                                                                    style="border-right: 1px solid #D7E1FF; border-bottom: 1px solid #D7E1FF;
+                                                                                                                color: Green; width: 190px;">
+                                                                                                                    <b
+                                                                                                                        style="font-weight: normal;">Own
+                                                                                                                        House-Nativity</b>
+                                                                                                                </td>
+                                                                                                                <td
+                                                                                                                    style="border-bottom: 1px solid #D7E1FF;">
+                                                                                                                    <span
+                                                                                                                        id="Nativity"
+                                                                                                                        class="Label"
+                                                                                                                        style="text-transform:capitalize;">
+                                                                                                                        <%= user.nativity
+                                                                                                                            %>
+                                                                                                                    </span>
+                                                                                                                </td>
+                                                                                                            </tr>
+                                                                                                            <tr>
+                                                                                                                <td class="Label"
+                                                                                                                    style="border-right: 1px solid #D7E1FF; border-bottom: 1px solid #D7E1FF;
+                                                                                                                color: Green; width: 190px;">
+                                                                                                                    <b
+                                                                                                                        style="font-weight: normal;">Any
+                                                                                                                        Other
+                                                                                                                        Details</b>
+                                                                                                                </td>
+                                                                                                                <td
+                                                                                                                    style="border-bottom: 1px solid #D7E1FF;">
+                                                                                                                    <span
+                                                                                                                        id="AnyOtherDetails"
+                                                                                                                        class="Label"
+                                                                                                                        style="text-transform:capitalize;"></span>
+                                                                                                                </td>
+                                                                                                            </tr>
+                                                                                                        </table>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td class="Label"
+                                                                                                        style="font-weight: bold; color: Green; background-color: #D7E1FF;
+                                                                                                    text-align: left; font-size: 14px;">
+                                                                                                        Life Partner
+                                                                                                        Expectations
+                                                                                                        (வாழ்க்கை துணை
+                                                                                                        பற்றிய
+                                                                                                        எதிர்பார்ப்பு)
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td
+                                                                                                        style="border-bottom: 1px solid #D7E1FF; border-right: 1px solid #D7E1FF;">
+                                                                                                        <table
+                                                                                                            border="0"
+                                                                                                            cellpadding="0"
+                                                                                                            cellspacing="0"
+                                                                                                            width="100%">
+                                                                                                            <tr>
+                                                                                                                <td class="Label"
+                                                                                                                    style="border-right: 1px solid #D7E1FF; border-bottom: 1px solid #D7E1FF;
+                                                                                                                color: Green; width: 190px;">
+                                                                                                                    <b
+                                                                                                                        style="font-weight: normal;">Qualification</b>
+                                                                                                                </td>
+                                                                                                                <td
+                                                                                                                    style="border-bottom: 1px solid #D7E1FF;">
+                                                                                                                    <span
+                                                                                                                        id="Qualification"
+                                                                                                                        class="Label"
+                                                                                                                        style="text-transform:capitalize;">
+                                                                                                                        <%= user.qualification
+                                                                                                                            %>
+                                                                                                                    </span>
+                                                                                                                </td>
+                                                                                                            </tr>
+                                                                                                            <tr>
+                                                                                                                <td class="Label"
+                                                                                                                    style="border-right: 1px solid #D7E1FF; border-bottom: 1px solid #D7E1FF;
+                                                                                                                color: Green; width: 190px;">
+                                                                                                                    <b
+                                                                                                                        style="font-weight: normal;">Job</b>
+                                                                                                                </td>
+                                                                                                                <td
+                                                                                                                    style="border-bottom: 1px solid #D7E1FF;">
+                                                                                                                    <span
+                                                                                                                        id="Job_ForGirls"
+                                                                                                                        class="Label"
+                                                                                                                        style="text-transform:capitalize;">
+                                                                                                                        <%= user.job_status
+                                                                                                                            %>
+                                                                                                                    </span>
+                                                                                                                </td>
+                                                                                                            </tr>
+                                                                                                            <tr>
+                                                                                                                <td class="Label"
+                                                                                                                    style="border-right: 1px solid #D7E1FF; border-bottom: 1px solid #D7E1FF;
+                                                                                                                color: Green; width: 190px;">
+                                                                                                                    <b
+                                                                                                                        style="font-weight: normal;">Job-Income/month</b>
+                                                                                                                </td>
+                                                                                                                <td
+                                                                                                                    style="border-bottom: 1px solid #D7E1FF;">
+                                                                                                                    <span
+                                                                                                                        id="JobPlace"
+                                                                                                                        class="Label"
+                                                                                                                        style="text-transform:capitalize;">
+                                                                                                                        <%= user.ex_job
+                                                                                                                            %>
+                                                                                                                    </span><span
+                                                                                                                        id="Incomemonth1"
+                                                                                                                        class="Label"
+                                                                                                                        style="text-transform:capitalize;">
+                                                                                                                        <%= user.income_range
+                                                                                                                            %>
+                                                                                                                    </span>
+                                                                                                                </td>
+                                                                                                            </tr>
+                                                                                                            <tr>
+                                                                                                                <td class="Label"
+                                                                                                                    style="border-right: 1px solid #D7E1FF; border-bottom: 1px solid #D7E1FF;
+                                                                                                                color: Green; width: 190px;">
+                                                                                                                    <b
+                                                                                                                        style="font-weight: normal;">Caste
+                                                                                                                        -
+                                                                                                                        Sub
+                                                                                                                        Caste</b>
+                                                                                                                </td>
+                                                                                                                <td
+                                                                                                                    style="border-bottom: 1px solid #D7E1FF;">
+                                                                                                                    <span
+                                                                                                                        id="Religion"
+                                                                                                                        class="Label"
+                                                                                                                        style="text-transform:capitalize;"></span><span
+                                                                                                                        id="Caste"
+                                                                                                                        class="Label"
+                                                                                                                        style="text-transform:capitalize;">
+                                                                                                                        -
+                                                                                                                        <%= user.caste
+                                                                                                                            || "no data"
+                                                                                                                            %>
+                                                                                                                            </span><span
+                                                                                                                        id="Subcaste"
+                                                                                                                        class="Label"
+                                                                                                                        style="text-transform:capitalize;">
+                                                                                                                        -
+                                                                                                                        <%= user.sub_caste
+                                                                                                                            || "no data"
+                                                                                                                            %>
+                                                                                                                            </span>
+                                                                                                                </td>
+                                                                                                            </tr>
+                                                                                                            <tr>
+                                                                                                                <td class="Label"
+                                                                                                                    style="border-right: 1px solid #D7E1FF; border-bottom: 1px solid #D7E1FF;
+                                                                                                                color: Green; width: 190px;">
+                                                                                                                    <b
+                                                                                                                        style="font-weight: normal;">Diet</b>
+                                                                                                                </td>
+                                                                                                                <td
+                                                                                                                    style="border-bottom: 1px solid #D7E1FF;">
+                                                                                                                    <span
+                                                                                                                        id="Diet_Expec"
+                                                                                                                        class="Label"
+                                                                                                                        style="text-transform:capitalize;">
+                                                                                                                        <%= user.diet
+                                                                                                                            %>
+                                                                                                                    </span>
+                                                                                                                </td>
+                                                                                                            </tr>
+                                                                                                            <tr>
+                                                                                                                <td class="Label"
+                                                                                                                    style="border-right: 1px solid #D7E1FF; border-bottom: 1px solid #D7E1FF;
+                                                                                                                color: Green; width: 190px;">
+                                                                                                                    <b
+                                                                                                                        style="font-weight: normal;">Marital
+                                                                                                                        Status</b>
+                                                                                                                </td>
+                                                                                                                <td
+                                                                                                                    style="border-bottom: 1px solid #D7E1FF;">
+                                                                                                                    <span
+                                                                                                                        id="MaritalStatus_Expec"
+                                                                                                                        class="Label"
+                                                                                                                        style="text-transform:capitalize;">UnMarried</span>
+                                                                                                                </td>
+                                                                                                            </tr>
+                                                                                                            <tr>
+                                                                                                                <td class="Label"
+                                                                                                                    style="border-right: 1px solid #D7E1FF;
+                                                                                                                color: Green; width: 190px;">
+                                                                                                                    <b
+                                                                                                                        style="font-weight: normal;">Any
+                                                                                                                        Other
+                                                                                                                        Expectation</b>
+                                                                                                                </td>
+                                                                                                                <td>
+                                                                                                                    <span
+                                                                                                                        id="AnyOtherExpectation"
+                                                                                                                        class="Label"
+                                                                                                                        style="text-transform:capitalize;">online
+                                                                                                                        reg
+                                                                                                                    </span>
+                                                                                                                </td>
+                                                                                                            </tr>
+                                                                                                        </table>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </table>
+                                                                                        </td>
+                                                                                        <td
+                                                                                            style="width: 250px; vertical-align: top; padding: 5px; text-align: center;">
+                                                                                            <table border="0"
+                                                                                                cellpadding="0"
+                                                                                                cellspacing="0"
+                                                                                                width="100%">
+                                                                                                <tr>
+                                                                                                    <td align="center">
+                                                                                                        <table
+                                                                                                            border="0"
+                                                                                                            cellpadding="0"
+                                                                                                            cellspacing="0"
+                                                                                                            width="225px">
+                                                                                                            <tr
+                                                                                                                style="height:20px;">
+                                                                                                                <td>
+                                                                                                                </td>
+                                                                                                            </tr>
+                                                                                                            <tr
+                                                                                                                style="height:20px;">
+                                                                                                                <td style=" border-left:1px solid #3A2BDF; border-right:1px solid #3A2BDF;  border-top:1px solid #3A2BDF; text-align:center; padding:3px; font-weight:bold;"
+                                                                                                                    class="Label">
+                                                                                                                    www.Thillaimatrimony.Org
+                                                                                                                </td>
+                                                                                                            </tr>
+                                                                                                            <tr>
+                                                                                                                <td align="center"
+                                                                                                                    style="width:225px;">
+                                                                                                                    <div
+                                                                                                                        id="up_photo">
+
+                                                                                                                        <input
+                                                                                                                            type="image"
+                                                                                                                            name="Image1"
+                                                                                                                            id="Image1"
+                                                                                                                            src="/<%= user.file_name || (user.gender == 'Male'? 'images/avatar/male-avatar.jpg': 'images/avatar/female-avatar.jpg' )%>"
+                                                                                                                            alt="No Profile Photo Available"
+                                                                                                                            style="border-color:#3A2BDF;border-width:1px;border-style:Solid;width:225px;" />
+                                                                                                                    </div>
+                                                                                                                </td>
+                                                                                                            </tr>
+                                                                                                            <tr>
+                                                                                                                <td align="center"
+                                                                                                                    style="text-align:center; padding-top:3px;">
+                                                                                                                    <div
+                                                                                                                        id="UpdatePanel1">
+
+
+
+
+                                                                                                                    </div>
+                                                                                                                </td>
+                                                                                                            </tr>
+                                                                                                        </table>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </table>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="Label" style="font-weight: bold; color: Green; background-color: #D7E1FF;
+                                                                            text-align: left; font-size: 14px;">
+                                                                                Contact Details
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td
+                                                                                style="border-bottom: 1px solid #D7E1FF; border-right: 1px solid #D7E1FF;">
+                                                                                <table border="0" cellpadding="0"
+                                                                                    cellspacing="0" width="100%">
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <table border="0"
+                                                                                                cellpadding="0"
+                                                                                                cellspacing="0"
+                                                                                                width="100%">
+                                                                                                <tr>
+                                                                                                    <td
+                                                                                                        style="width: 50%;">
+                                                                                                        <table
+                                                                                                            border="0"
+                                                                                                            cellpadding="0"
+                                                                                                            cellspacing="0"
+                                                                                                            width="100%">
+                                                                                                            <tr>
+                                                                                                                <td class="Label"
+                                                                                                                    style="border-right: 1px solid #D7E1FF; border-left: 1px solid #D7E1FF; border-bottom: 1px solid #D7E1FF;
+                                                                                                                color: Green; width: 190px;">
+                                                                                                                    <b
+                                                                                                                        style="font-weight: normal;">Contact
+                                                                                                                        Person</b>
+                                                                                                                </td>
+                                                                                                                <td
+                                                                                                                    style="border-bottom: 1px solid #D7E1FF; border-left: 1px solid #D7E1FF; ">
+                                                                                                                    <span
+                                                                                                                        id="ContactPerson"
+                                                                                                                        class="Label"
+                                                                                                                        style="text-transform:capitalize;">
+                                                                                                                        <%= user.contact_person
+                                                                                                                            %>
+                                                                                                                    </span>
+                                                                                                                </td>
+                                                                                                            </tr>
+                                                                                                        </table>
+                                                                                                    </td>
+                                                                                                    <td
+                                                                                                        style="width: 50%;">
+                                                                                                        <table
+                                                                                                            border="0"
+                                                                                                            cellpadding="0"
+                                                                                                            cellspacing="0"
+                                                                                                            width="100%">
+                                                                                                            <tr>
+                                                                                                                <td class="Label"
+                                                                                                                    style="border-right: 1px solid #D7E1FF; border-left: 1px solid #D7E1FF;
+                                                                                                                border-bottom: 1px solid #D7E1FF; color: Green; width: 120px;">
+                                                                                                                    <b
+                                                                                                                        style="font-weight: normal;">Contact
+                                                                                                                        No.</b>
+                                                                                                                </td>
+                                                                                                                <td
+                                                                                                                    style="border-bottom: 1px solid #D7E1FF;">
+                                                                                                                    <span
+                                                                                                                        id="ContactNo"
+                                                                                                                        class="Label"
+                                                                                                                        style="text-transform:capitalize; font-weight:bold;">88388
+                                                                                                                        57702
+                                                                                                                        /
+                                                                                                                        99447
+                                                                                                                        25226(what's
+                                                                                                                        app)</span>
+                                                                                                                </td>
+                                                                                                            </tr>
+                                                                                                        </table>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </table>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <table border="0"
+                                                                                                cellpadding="0"
+                                                                                                cellspacing="0"
+                                                                                                width="100%">
+                                                                                                <tr>
+                                                                                                    <td class="Label"
+                                                                                                        style="border-right: 1px solid #D7E1FF; border-left: 1px solid #D7E1FF;  color: Green;
+                                                                                                    width: 190px;">
+                                                                                                        <b
+                                                                                                            style="font-weight: normal;">Email
+                                                                                                            ID.</b>
+                                                                                                    </td>
+                                                                                                    <td>
+                                                                                                        <span id="Email"
+                                                                                                            class="Label">
+                                                                                                            <%= user.email
+                                                                                                                %>
+                                                                                                        </span>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </table>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border-bottom: 1px solid #D7E1FF; border-left: 1px solid #D7E1FF;
+                                        border-right: 1px solid #D7E1FF;">
+                                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                <tr>
+                                                    <td style="padding-bottom: 10px; padding-left: 30px;"
+                                                        valign="middle">
+                                                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                            <tr>
+                                                                <td>
+                                                                    <table border="0" cellpadding="0" cellspacing="0"
+                                                                        width="100%">
+                                                                        <tr>
+
+                                                                            <td width="100%" height="28">
+                                                                                <table border="0" width="100%"
+                                                                                    cellpadding="0">
+                                                                                    <tr>
+                                                                                        <td align="center" class="Label"
+                                                                                            style="color: Green;">
+                                                                                            &nbsp;Website :
+                                                                                            www.thillaimatrimony.org
+                                                                                            &nbsp;&nbsp;&nbsp;&nbsp;
+                                                                                            <span
+                                                                                                style="color: Green;">Phone
+                                                                                                :</span> :
+                                                                                            +91-9489 33 1973
+                                                                                            &nbsp;&nbsp;&nbsp;&nbsp;
+                                                                                            <span
+                                                                                                style="color: Green;">Email
+                                                                                                :</span>
+                                                                                            dumdumdummarriage@gmail.com
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                                <table border="0" width="100%"
+                                                                                    cellpadding="0">
+                                                                                    <tr>
+                                                                                        <td align="center" class="Label"
+                                                                                            style="color: Green;">
+                                                                                            Dasa Balance :
+                                                                                            <span id="lblDasa"
+                                                                                                class="Label"
+                                                                                                style="text-transform:capitalize;"></span>Dasa
+                                                                                            &nbsp;&nbsp;<span
+                                                                                                id="lblYear"
+                                                                                                class="Label"
+                                                                                                style="text-transform:capitalize;">2</span>Year(s)
+                                                                                            &nbsp;&nbsp;<span
+                                                                                                id="lblMonths"
+                                                                                                class="Label"
+                                                                                                style="text-transform:capitalize;">00</span>Month(s)
+                                                                                            &nbsp;&nbsp;<span
+                                                                                                id="lblDays"
+                                                                                                class="Label"
+                                                                                                style="text-transform:capitalize;">24</span>Day(s)
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <table border="0" cellpadding="0"
+                                                                                    cellspacing="0" width="100%">
+                                                                                    <tr>
+                                                                                        <td>&nbsp;
+
+                                                                                        </td>
+                                                                                        <td style="width: 352px;">
+                                                                                            <table border="0"
+                                                                                                cellpadding="0"
+                                                                                                cellspacing="0"
+                                                                                                width="100%">
+                                                                                                <tr>
+                                                                                                    <td>
+                                                                                                        <table
+                                                                                                            border="0"
+                                                                                                            cellpadding="0"
+                                                                                                            cellspacing="0"
+                                                                                                            width="100%">
+                                                                                                            <tr>
+                                                                                                                <td width="88px"
+                                                                                                                    style="height: 56px; border: 1px solid #000000; border-right: 0px solid #cccccc; vertical-align: middle;
+                                                                                                                text-align: center;">
+                                                                                                                    <span
+                                                                                                                        id="lblRasi1"
+                                                                                                                        class="Label12"
+                                                                                                                        style="text-transform:capitalize;">
+                                                                                                                        <%= user.txtHoro1
+                                                                                                                            || "1"
+                                                                                                                            %>
+                                                                                                                    </span>
+                                                                                                                </td>
+                                                                                                                <td width="88px"
+                                                                                                                    style="height: 56px; border: 1px solid #000000; border-right: 0px solid #cccccc; vertical-align: middle;
+                                                                                                                text-align: center;">
+                                                                                                                    <span
+                                                                                                                        id="lblRasi2"
+                                                                                                                        class="Label12"
+                                                                                                                        style="text-transform:capitalize;">
+                                                                                                                        <%= user.txtHoro1
+                                                                                                                            || "2"
+                                                                                                                            %>
+                                                                                                                    </span>
+                                                                                                                </td>
+                                                                                                                <td width="88px"
+                                                                                                                    style="height: 56px; border: 1px solid #000000; border-right: 0px solid #cccccc; vertical-align: middle;
+                                                                                                                text-align: center;">
+                                                                                                                    <span
+                                                                                                                        id="lblRasi3"
+                                                                                                                        class="Label12"
+                                                                                                                        style="text-transform:capitalize;">
+                                                                                                                        <%= user.txtHoro1
+                                                                                                                            || "3"
+                                                                                                                            %>
+                                                                                                                    </span>
+                                                                                                                </td>
+                                                                                                                <td width="88px"
+                                                                                                                    style="height: 56px; border: 1px solid #000000; border-bottom: 0px solid #cccccc; vertical-align: middle;
+                                                                                                                text-align: center;">
+                                                                                                                    <span
+                                                                                                                        id="lblRasi4"
+                                                                                                                        class="Label12"
+                                                                                                                        style="text-transform:capitalize;">
+                                                                                                                        <%= user.txtHoro1
+                                                                                                                            || "4"
+                                                                                                                            %>
+                                                                                                                    </span>
+                                                                                                                </td>
+                                                                                                            </tr>
+                                                                                                        </table>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td>
+                                                                                                        <table
+                                                                                                            border="0"
+                                                                                                            cellpadding="0"
+                                                                                                            cellspacing="0"
+                                                                                                            width="100%">
+                                                                                                            <tr>
+                                                                                                                <td
+                                                                                                                    width="88px">
+                                                                                                                    <table
+                                                                                                                        border="0"
+                                                                                                                        cellpadding="0"
+                                                                                                                        cellspacing="0"
+                                                                                                                        width="100%">
+                                                                                                                        <tr>
+                                                                                                                            <td width="88px"
+                                                                                                                                style="height: 56px; border-left: 1px solid #000000; border-right: 1px solid #000000; vertical-align: middle;
+                                                                                                                            text-align: center;">
+                                                                                                                                <span
+                                                                                                                                    id="lblRasi5"
+                                                                                                                                    class="Label12"
+                                                                                                                                    style="text-transform:capitalize;">
+                                                                                                                                    <%= user.txtHoro1
+                                                                                                                                        || "5"
+                                                                                                                                        %>
+                                                                                                                                </span>
+                                                                                                                            </td>
+                                                                                                                        </tr>
+                                                                                                                        <tr>
+                                                                                                                            <td width="88px"
+                                                                                                                                style="height: 56px; border: 1px solid #000000;  border-bottom: 0px solid #cccccc; vertical-align: middle;
+                                                                                                                            text-align: center;">
+                                                                                                                                <span
+                                                                                                                                    id="lblRasi6"
+                                                                                                                                    class="Label12"
+                                                                                                                                    style="text-transform:capitalize;">
+                                                                                                                                    <%= user.txtHoro1
+                                                                                                                                        || "6"
+                                                                                                                                        %>
+                                                                                                                                </span>
+                                                                                                                            </td>
+                                                                                                                        </tr>
+                                                                                                                    </table>
+                                                                                                                </td>
+                                                                                                                <td>
+                                                                                                                    <p
+                                                                                                                        align="center">
+                                                                                                                        <b>
+                                                                                                                            <font
+                                                                                                                                face="Arial"
+                                                                                                                                size="3"
+                                                                                                                                color="#008000">
+                                                                                                                                RASI
+                                                                                                                            </font>
+                                                                                                                        </b>
+                                                                                                                    </p>
+                                                                                                                </td>
+                                                                                                                <td
+                                                                                                                    width="88px">
+                                                                                                                    <table
+                                                                                                                        border="0"
+                                                                                                                        cellpadding="0"
+                                                                                                                        cellspacing="0"
+                                                                                                                        width="100%">
+                                                                                                                        <tr>
+                                                                                                                            <td width="88px"
+                                                                                                                                style="height: 56px; border: 1px solid #000000;  border-bottom: 0px solid #cccccc; vertical-align: middle;
+                                                                                                                            text-align: center;">
+                                                                                                                                <span
+                                                                                                                                    id="lblRasi7"
+                                                                                                                                    class="Label12"
+                                                                                                                                    style="text-transform:capitalize;">
+                                                                                                                                    <%= user.txtHoro1
+                                                                                                                                        || "7"
+                                                                                                                                        %>
+                                                                                                                                </span>
+                                                                                                                            </td>
+                                                                                                                        </tr>
+                                                                                                                        <tr>
+                                                                                                                            <td width="88px"
+                                                                                                                                style="height: 56px; border: 1px solid #000000;  border-bottom: 0px solid #cccccc; vertical-align: middle;
+                                                                                                                            text-align: center;">
+                                                                                                                                <span
+                                                                                                                                    id="lblRasi8"
+                                                                                                                                    class="Label12"
+                                                                                                                                    style="text-transform:capitalize;">
+                                                                                                                                    <%= user.txtHoro1
+                                                                                                                                        || "8"
+                                                                                                                                        %>
+                                                                                                                                </span>
+                                                                                                                            </td>
+                                                                                                                        </tr>
+                                                                                                                    </table>
+                                                                                                                </td>
+                                                                                                            </tr>
+                                                                                                        </table>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td>
+                                                                                                        <table
+                                                                                                            border="0"
+                                                                                                            cellpadding="0"
+                                                                                                            cellspacing="0"
+                                                                                                            width="100%">
+                                                                                                            <tr>
+                                                                                                                <td width="88px"
+                                                                                                                    style="height: 56px; border: 1px solid #000000;  border-right: 0px solid #cccccc; vertical-align: middle;
+                                                                                                                text-align: center;">
+                                                                                                                    <span
+                                                                                                                        id="lblRasi9"
+                                                                                                                        class="Label12"
+                                                                                                                        style="text-transform:capitalize;">
+                                                                                                                        <%= user.txtHoro1
+                                                                                                                            || "9"
+                                                                                                                            %>
+                                                                                                                    </span>
+                                                                                                                </td>
+                                                                                                                <td width="88px"
+                                                                                                                    style="height: 56px; border: 1px solid #000000;  border-right: 0px solid #cccccc; vertical-align: middle;
+                                                                                                                text-align: center;">
+                                                                                                                    <span
+                                                                                                                        id="lblRasi10"
+                                                                                                                        class="Label12"
+                                                                                                                        style="text-transform:capitalize;">
+                                                                                                                        <%= user.txtHoro1
+                                                                                                                            || "10"
+                                                                                                                            %>
+                                                                                                                    </span>
+                                                                                                                </td>
+                                                                                                                <td width="88px"
+                                                                                                                    style="height: 56px; border: 1px solid #000000; border-right: 0px solid #cccccc; vertical-align: middle;
+                                                                                                                text-align: center;">
+                                                                                                                    <span
+                                                                                                                        id="lblRasi11"
+                                                                                                                        class="Label12"
+                                                                                                                        style="text-transform:capitalize;">
+                                                                                                                        <%= user.txtHoro1
+                                                                                                                            || "11"
+                                                                                                                            %>
+                                                                                                                    </span>
+                                                                                                                </td>
+                                                                                                                <td width="88px"
+                                                                                                                    style="height: 56px; border: 1px solid #000000; border-right: 1px solid #000000; vertical-align: middle;
+                                                                                                                text-align: center;">
+                                                                                                                    <span
+                                                                                                                        id="lblRasi12"
+                                                                                                                        class="Label12"
+                                                                                                                        style="text-transform:capitalize;">
+                                                                                                                        <%= user.txtHoro1
+                                                                                                                            || "12"
+                                                                                                                            %>
+                                                                                                                    </span>
+                                                                                                                </td>
+                                                                                                            </tr>
+                                                                                                        </table>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </table>
+                                                                                        </td>
+                                                                                        <td align="center"
+                                                                                            style="color: Maroon; font-weight:bold; font-family:Arial; vertical-align:middle; font-size:16px; line-height:30px;">
+                                                                                            ஸ்ரீ ராம் மேட்ரிமோனி,
+                                                                                            <br />9.புது தெரு,<br />BSNL
+                                                                                            பக்கத்தில், <br />செய்யாறு -
+                                                                                            604407
+                                                                                            <br />
+                                                                                            Call : 9489331973
+                                                                                            <br />
+                                                                                            www.Thillaimatrimony.org
+                                                                                        </td>
+                                                                                        <td style="width: 352px;">
+                                                                                            <table border="0"
+                                                                                                cellpadding="0"
+                                                                                                cellspacing="0"
+                                                                                                width="100%">
+                                                                                                <tr>
+                                                                                                    <td>
+                                                                                                        <table
+                                                                                                            border="0"
+                                                                                                            cellpadding="0"
+                                                                                                            cellspacing="0"
+                                                                                                            width="100%">
+                                                                                                            <tr>
+                                                                                                                <td width="88px"
+                                                                                                                    style="height: 56px; border: 1px solid #000000;  border-right: 0px solid #cccccc; vertical-align: middle;
+                                                                                                                text-align: center;">
+                                                                                                                    <span
+                                                                                                                        id="lblAmsam1"
+                                                                                                                        class="Label12"
+                                                                                                                        style="text-transform:capitalize;">
+                                                                                                                        <%= user.amsa_1
+                                                                                                                            %>
+                                                                                                                    </span>
+                                                                                                                </td>
+                                                                                                                <td width="88px"
+                                                                                                                    style="height: 56px; border: 1px solid #000000;  border-right: 0px solid #cccccc; vertical-align: middle;
+                                                                                                                text-align: center;">
+                                                                                                                    <span
+                                                                                                                        id="lblAmsam2"
+                                                                                                                        class="Label12"
+                                                                                                                        style="text-transform:capitalize;">
+                                                                                                                        <%= user.amsa_2
+                                                                                                                            %>
+                                                                                                                    </span>
+                                                                                                                </td>
+                                                                                                                <td width="88px"
+                                                                                                                    style="height: 56px; border: 1px solid #000000;  border-right: 0px solid #cccccc; vertical-align: middle;
+                                                                                                                text-align: center;">
+                                                                                                                    <span
+                                                                                                                        id="lblAmsam3"
+                                                                                                                        class="Label12"
+                                                                                                                        style="text-transform:capitalize;">
+                                                                                                                        <%= user.amsa_3
+                                                                                                                            %>
+                                                                                                                    </span>
+                                                                                                                </td>
+                                                                                                                <td width="88px"
+                                                                                                                    style="height: 56px; border: 1px solid #000000;vertical-align: middle;
+                                                                                                                text-align: center;">
+                                                                                                                    <span
+                                                                                                                        id="lblAmsam4"
+                                                                                                                        class="Label12"
+                                                                                                                        style="text-transform:capitalize;">
+                                                                                                                        <%= user.amsa_4
+                                                                                                                            %>
+                                                                                                                    </span>
+                                                                                                                </td>
+                                                                                                            </tr>
+                                                                                                        </table>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td>
+                                                                                                        <table
+                                                                                                            border="0"
+                                                                                                            cellpadding="0"
+                                                                                                            cellspacing="0"
+                                                                                                            width="100%">
+                                                                                                            <tr>
+                                                                                                                <td
+                                                                                                                    width="88px">
+                                                                                                                    <table
+                                                                                                                        border="0"
+                                                                                                                        cellpadding="0"
+                                                                                                                        cellspacing="0"
+                                                                                                                        width="100%">
+                                                                                                                        <tr>
+                                                                                                                            <td width="88px"
+                                                                                                                                style="height: 56px; border: 1px solid #000000;  border-bottom: 0px solid #cccccc;  border-top: 0px solid #cccccc; vertical-align: middle;
+                                                                                                                            text-align: center;">
+                                                                                                                                <span
+                                                                                                                                    id="lblAmsam5"
+                                                                                                                                    class="Label12"
+                                                                                                                                    style="text-transform:capitalize;">
+                                                                                                                                    <%= user.amsa_5
+                                                                                                                                        %>
+                                                                                                                                </span>
+                                                                                                                            </td>
+                                                                                                                        </tr>
+                                                                                                                        <tr>
+                                                                                                                            <td width="88px"
+                                                                                                                                style="height: 56px; border: 1px solid #000000;   border-bottom: 0px solid #cccccc; vertical-align: middle;
+                                                                                                                            text-align: center;">
+                                                                                                                                <span
+                                                                                                                                    id="lblAmsam6"
+                                                                                                                                    class="Label12"
+                                                                                                                                    style="text-transform:capitalize;">
+                                                                                                                                    <%= user.amsa_6
+                                                                                                                                        %>
+                                                                                                                                </span>
+                                                                                                                            </td>
+                                                                                                                        </tr>
+                                                                                                                    </table>
+                                                                                                                </td>
+                                                                                                                <td>
+                                                                                                                    <p
+                                                                                                                        align="center">
+                                                                                                                        <b>
+                                                                                                                            <font
+                                                                                                                                face="Arial"
+                                                                                                                                size="3"
+                                                                                                                                color="#008000">
+                                                                                                                                AMSAM
+                                                                                                                            </font>
+                                                                                                                        </b>
+                                                                                                                    </p>
+                                                                                                                </td>
+                                                                                                                <td
+                                                                                                                    width="88px">
+                                                                                                                    <table
+                                                                                                                        border="0"
+                                                                                                                        cellpadding="0"
+                                                                                                                        cellspacing="0"
+                                                                                                                        width="100%">
+                                                                                                                        <tr>
+                                                                                                                            <td width="88px"
+                                                                                                                                style="height: 56px; border: 1px solid #000000;   border-bottom: 0px solid #cccccc;  border-top: 0px solid #cccccc; vertical-align: middle;
+                                                                                                                            text-align: center;">
+                                                                                                                                <span
+                                                                                                                                    id="lblAmsam7"
+                                                                                                                                    class="Label12"
+                                                                                                                                    style="text-transform:capitalize;">
+                                                                                                                                    <%= user.amsa_7
+                                                                                                                                        %>
+                                                                                                                                </span>
+                                                                                                                            </td>
+                                                                                                                        </tr>
+                                                                                                                        <tr>
+                                                                                                                            <td width="88px"
+                                                                                                                                style="height: 56px; border: 1px solid #000000;  border-bottom: 0px solid #cccccc;vertical-align: middle;
+                                                                                                                            text-align: center;">
+                                                                                                                                <span
+                                                                                                                                    id="lblAmsam8"
+                                                                                                                                    class="Label12"
+                                                                                                                                    style="text-transform:capitalize;">
+                                                                                                                                    <%= user.amsa_8
+                                                                                                                                        %>
+                                                                                                                                </span>
+                                                                                                                            </td>
+                                                                                                                        </tr>
+                                                                                                                    </table>
+                                                                                                                </td>
+                                                                                                            </tr>
+                                                                                                        </table>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td>
+                                                                                                        <table
+                                                                                                            border="0"
+                                                                                                            cellpadding="0"
+                                                                                                            cellspacing="0"
+                                                                                                            width="100%">
+                                                                                                            <tr>
+                                                                                                                <td width="88px"
+                                                                                                                    style="height: 56px; border: 1px solid #000000;   border-right: 0px solid #cccccc; vertical-align: middle;
+                                                                                                                text-align: center;">
+                                                                                                                    <span
+                                                                                                                        id="lblAmsam9"
+                                                                                                                        class="Label12"
+                                                                                                                        style="text-transform:capitalize;">
+                                                                                                                        <%= user.amsa_9
+                                                                                                                            %>
+                                                                                                                    </span>
+                                                                                                                </td>
+                                                                                                                <td width="88px"
+                                                                                                                    style="height: 56px; border: 1px solid #000000;   border-right: 0px solid #cccccc;  vertical-align: middle;
+                                                                                                                text-align: center;">
+                                                                                                                    <span
+                                                                                                                        id="lblAmsam10"
+                                                                                                                        class="Label12"
+                                                                                                                        style="text-transform:capitalize;">
+                                                                                                                        <%= user.amsa_10
+                                                                                                                            %>
+                                                                                                                    </span>
+                                                                                                                </td>
+                                                                                                                <td width="88px"
+                                                                                                                    style="height: 56px; border: 1px solid #000000;    border-right: 0px solid #cccccc; vertical-align: middle;
+                                                                                                                text-align: center;">
+                                                                                                                    <span
+                                                                                                                        id="lblAmsam11"
+                                                                                                                        class="Label12"
+                                                                                                                        style="text-transform:capitalize;">
+                                                                                                                        <%= user.amsa_11
+                                                                                                                            %>
+                                                                                                                    </span>
+                                                                                                                </td>
+                                                                                                                <td width="88px"
+                                                                                                                    style="height: 56px; border: 1px solid #000000; vertical-align: middle;
+                                                                                                                text-align: center;">
+                                                                                                                    <span
+                                                                                                                        id="lblAmsam12"
+                                                                                                                        class="Label12"
+                                                                                                                        style="text-transform:capitalize;">
+                                                                                                                        <%= user.amsa_12
+                                                                                                                            %>
+                                                                                                                    </span>
+                                                                                                                </td>
+                                                                                                            </tr>
+                                                                                                        </table>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </table>
+                                                                                        </td>
+                                                                                        <td>&nbsp;
+
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- Add other fields as needed -->
+                <% }); %>
+                    <% } else { %>
+                        <p>No user data found.</p>
+                        <% } %>
+    </ul>
+
+
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.3170265685985!2d79.70246911430303!3d12.82277892159705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52c2f9650ea009%3A0x658feab8c52d4671!2sPS%20Silk%20Sarees%20Shop%20-%20Kanchipuram%20Silk%20Saree%20Manufacturer%20Wholesale%20Shops!5e0!3m2!1sen!2sin!4v1618591816834!5m2!1sen!2sin"
+        width="1px" height="1px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15561.528890611!2d79.6859038134702!3d12.818559691586202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52c2f7458b2051%3A0xdc9a7f5e0d781b8e!2sKanchipuram%20Silk%20Saree%20Manufacturers%20%26%20Wholesale%20Supplier%20-%20KPS%20Silk%20Sarees!5e0!3m2!1sen!2sin!4v1655706062030!5m2!1sen!2sin"
+        width="1px" height="1px" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+    </form>
+    </body>
+
+    <!-- Mirrored from www.thillaimatri.com/FullView.aspx?id=F11356 by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 25 Nov 2024 04:26:35 GMT -->
+
+    </html>

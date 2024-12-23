@@ -1,0 +1,577 @@
+<%- include('header_footer/header') %>
+  <style>
+    /* Animation for the popup */
+    .show-popup {
+      animation: slide-down 0.5s ease-out;
+      z-index: 999999;
+    }
+
+    @keyframes slide-down {
+      0% {
+        transform: translateY(-100%);
+      }
+
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+    .slick-dots {
+      bottom: 0 !important;
+    }
+
+    .slick-dotted.slick-slider {
+      margin-bottom: 0 !important;
+    }
+
+    .banner-text {
+      background: #00000059;
+      padding: 20px;
+    }
+
+    .banner-text p {
+
+      font-size: 16px;
+    }
+
+    @import url(https://fonts.googleapis.com/css?family=Lato:400,600,700);
+.snip1527 {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  color: #ffffff;
+  float: left;
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 16px;
+  margin: 10px 1%;
+  max-width: 310px;
+  min-width: 250px;
+  overflow: hidden;
+  position: relative;
+  text-align: left;
+  width: 100%;
+}
+
+.snip1527 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.snip1527 img {
+  max-width: 100%;
+  vertical-align: top;
+  position: relative;
+}
+
+.snip1527 figcaption {
+  padding: 15px 20px 15px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  z-index: 1;
+}
+
+.snip1527 figcaption:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #ae564e;
+  opacity: 0.7;
+  content: '';
+  z-index: -1;
+}
+
+.snip1527 .date {
+  background-color: #fff;
+  border-radius: 50%;
+  color: #700877;
+  font-size: 18px;
+  font-weight: 700;
+  min-height: 48px;
+  min-width: 48px;
+  padding: 10px 0;
+  position: absolute;
+  right: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  top: -25px;
+}
+
+.snip1527 .date span {
+  display: block;
+  line-height: 14px;
+}
+
+.snip1527 .date .month {
+  font-size: 11px;
+}
+
+.snip1527 h3,
+.snip1527 p {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.snip1527 h3 {
+  display: inline-block;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+  margin-bottom: 5px;
+}
+
+.snip1527 p {
+  font-size: 0.8em;
+  line-height: 1.6em;
+  margin-bottom: 0px;
+}
+
+.snip1527 a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.snip1527:hover img,
+.snip1527.hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.hero-slider-2 .slick-next:before {
+  color: #99180b;
+  opacity: 1;
+  padding: 5px;
+}
+
+.hero-slider-2 .slick-prev:before {
+  color: #99180b;
+  opacity: 1;
+  padding: 5px;
+}
+.hero-slider-2 .slick-dots {
+  bottom: -22px !important;
+}
+  </style>
+  <div id="login-popup" class="fixed inset-0 bg-gray-900 bg-opacity-50 flex justify-center items-center hidden">
+    <div class="bg-white p-6 rounded-lg shadow-lg w-1/3">
+      <button onclick="close_form()" class="mt-4 text-red-600 float-end">X</button>
+      <h2 class="text-2xl font-bold text-center mb-4">Login to Your Account</h2>
+
+      <form>
+        <div class="mb-4">
+          <label for="username" class="block text-sm font-medium text-gray-700">Username</label>
+          <input type="text" id="username" class="w-full p-2 border border-gray-300 rounded-lg">
+        </div>
+        <div class="mb-4">
+          <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+          <input type="password" id="password" class="w-full p-2 border border-gray-300 rounded-lg">
+        </div>
+        <div class="text-center">
+          <button id="login" type="submit" class="bg-red-600 text-white px-4 py-2 rounded">Login</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <td valign="top">
+    <table border="0" cellpadding="0" cellspacing="0" width="1316" align="center">
+
+      <tr>
+        <td>
+          <table cellpadding="0" cellspacing="0" border="0" width="100%">
+            <tr>
+              <td align="center" valign="top" width="100">
+
+              </td>
+              <td>
+                <table cellpadding="0" cellspacing="0" border="0" width="1149">
+                  <tr>
+                    <td>
+                      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tr>
+                          <td>
+                            <img src="" alt="">
+                          </td>
+                        </tr>
+                        <tr>
+                          <!-- <img src="images/logo=banner/banner-0.png" alt=""> -->
+
+                          <!-- Hero Section -->
+                          <section class="hero-slider" style="    width:1149px;">
+                            <div class="hero-slide relative w-full">
+                              <img src="images/logo=banner/banner-0.png" alt="Hero Slide 1"
+                                class="object-cover w-full h-full">
+                              <div class="absolute inset-0 flex items-end pb-8 text-white text-center px-4">
+                                <div class="banner-text">
+                                  <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Find Your Perfect Match
+                                  </h1>
+                                  <p class="text-lg sm:text-xl mb-6">Join us today and start your journey towards a
+                                    happy
+                                    future</p>
+                                  <button onclick="show_Form()" id="login"
+                                    class="bg-red-600 text-white py-2 px-6 rounded hover:bg-red-500">Join Now</button>
+                                </div>
+
+                              </div>
+                            </div>
+                            <div class="hero-slide relative w-full">
+                              <img src="images/logo=banner/banner-1.png" alt="Hero Slide 2"
+                                class="object-cover w-full h-full">
+                              <div class="absolute inset-0 flex items-end pb-8 text-white text-center px-4">
+                                <div class="banner-text">
+                                  <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Experience the Tamil
+                                    Wedding <br>
+                                    Tradition
+                                  </h1>
+                                  <p class="text-lg sm:text-xl mb-6">Find love within our rich cultural traditions</p>
+                                  <button onclick="show_Form()" id="login"
+                                    class="bg-red-600 text-white py-2 px-6 rounded hover:bg-red-500">Join Now</button>
+                                </div>
+
+                              </div>
+                            </div>
+                            <div class="hero-slide relative w-full">
+                              <img src="images/logo=banner/banner-2.png" alt="Hero Slide 3"
+                                class="object-cover w-full h-full">
+                              <div class="absolute inset-0 flex items-end pb-8 text-white text-center px-4">
+                                <div class="banner-text">
+                                  <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Your Love Story Starts
+                                    Here
+                                  </h1>
+                                  <p class="text-lg sm:text-xl mb-6">Discover your soulmate today</p>
+                                  <button onclick="show_Form()" id="login"
+                                    class="bg-red-600 text-white py-2 px-6 rounded hover:bg-red-500">Join Now</button>
+
+                                </div>
+
+                              </div>
+                            </div>
+                          </section>
+                        </tr>
+                        <marquee behavior="SCROLL" bgcolor="#FFFDF7" loop="3"> <strong>
+                            <span style="color: #3366FF; font-size: 16px; font-weight: bold; font-family: Arial;">
+                              Welcome To Sriram Matrimony ,<span style="color:Maroon">Advertising Matrimony Services
+                                Organization,</span>
+                              <span style="color:#3366FF;">NO USER ID, NO PASSWARD</span>
+                              <span style="color:#3366FF;">Fully FREE VIEW Unlimited PROFILE</span>
+                              <span style="color:orange;">NO SERVICE CHARGES</span>
+                              <span style="color:red;">NO RENEWAL Fees</span>
+                              NO TIME LIMIT
+                              <span style="color:#3366FF;">NO MEDIATORY SERVICE</span>
+                              <span style="color:Maroon;">DIRECT CONDUCT</span>
+                              <span style="color:orange;">Online + Offline service</span>
+                              <span style="color:#3366FF;">Just Rs.1000 Only</span>
+                              For EASY &amp; QUICK Marriage Call; <span style="color:Maroon">9488 87 3562</span>
+                            </span>
+                          </strong>
+                        </marquee>
+                        <tr>
+                          <td>
+                            <div class="border border-[#FA812F] rounded-lg p-[.6rem] shadow-lg max-w-full w-full">
+                              <h3 class="text-lg font-semibold text-[#FA4032] mb-1">Quick Search</h3>
+                              <form method="GET" action="/search" class="space-y-3 sm:flex">
+                                <!-- Quick Search Selectors in a single row -->
+                                <div class="flex flex-wrap gap-4 w-full">
+                                  <!-- Gender -->
+                                  <div class="flex flex-col w-full sm:w-[22%]">
+                                    <label class="block text-gray-700 text-sm mb-1">Gender:</label>
+                                    <select name="DropDownList8" class="border  rounded px-2 py-1 w-full">
+                                      <option value="Male">Male</option>
+                                      <option value="Female">Female</option>
+                                    </select>
+                                  </div>
+                                  <!-- Language -->
+                                  <div class="flex flex-col w-full sm:w-[22%]">
+                                    <label class="block text-gray-700 text-sm mb-1">Language:</label>
+                                    <select name="Cntrl_DD_Religion" class="border  rounded px-2 py-1 w-full">
+                                      <option value="">Any</option>
+                                    </select>
+                                  </div>
+                                  <!-- Caste -->
+                                  <div class="flex flex-col w-full sm:w-[22%]">
+                                    <label class="block text-gray-700 text-sm mb-1">Caste:</label>
+                                    <select name="Cntrl_DD_Caste" class="border  rounded px-2 py-1 w-full">
+                                      <option value="">Any</option>
+                                    </select>
+                                  </div>
+                                  <!-- Subcaste -->
+                                  <div class="flex flex-col w-full sm:w-[22%]">
+                                    <label class="block text-gray-700 text-sm mb-1">Subcaste:</label>
+                                    <select name="Cntrl_DD_SubCaste" class="border  rounded px-2 py-1 w-full">
+                                      <option value="">Any</option>
+                                    </select>
+                                  </div>
+                                </div>
+                                <!-- Submit Button -->
+                                <button type="submit"
+                                  class=" bg-[#FAB12F] text-white font-semibold  px-4 rounded flex items-center mx-auto float-right">
+                                  SEARCH
+                                </button>
+                              </form>
+                            </div>
+                          </td>
+                          <td class="float-right">
+                            <!-- Search by Online Reg. No -->
+                            <div class="border border-[#FA812F] rounded-lg p-[.6rem] shadow-lg max-w-xs w-full">
+                              <h3 class="text-lg font-semibold text-[#FA4032] mb-1">Search By Online Reg. No.</h3>
+                              <form class="space-y-3 sm:flex sm:justify-between">
+                                <div>
+                                  <label class="block text-gray-700 text-sm mb-1">Profile Reg. No.:</label>
+                                  <input type="text" class="w-full border rounded px-2 py-1">
+                                </div>
+                                <button type="submit"
+                                  class="mt-4 bg-[#FAB12F] text-white font-semibold  px-4 rounded flex items-center float-right">
+                                  SEARCH
+                                </button>
+                              </form>
+                            </div>
+                          </td>
+
+                        </tr>
+
+
+                      </table>
+
+                      <div class="abt-section">
+
+                        <div class="title-card" style="padding: 30px 0px;">
+                              <h3 style="font-size: 1.3rem;
+                              text-align: center;
+                              font-weight: 600;
+                              color: #99180b;">திருமணம் நிறைவேற வழிகள்</h3>
+                        </div>
+
+                        <div class="left-side">
+                          <img src="" alt="">
+                        </div>
+                        <div class="right-side">
+                          <p>நமது ஸ்ரீ ராம் திருமணதகவல் மையத்தில் இணைய தள வாயிலாக. பதிவு செய்யுங்கள் உங்களது. 
+                            போன் மூலமாக, வரன்களை பார்த்துக்கொள்ளலாம். வரண்களின் படிப்பு, தொழில், வருமானம், 
+                            சொத்து விபரங்கள், உயரம். எதிர்பார்பு பரிமாறுதல் மற்றும்
+                            தொலை பேசி எண்கள் முகவரியில் மாற்றங்கள் இருதால். உடனே பதிவில் திருதம் செய்து கொள்வது 
+                            நல்லது. எல்லோடுக்கும். விரைவில் திருமணம் முடிந்து .எல்லா வளமும் நலமும்பேற
+                            வாழ்துக்கள், வாழ்க வளமுடன் சுபம்.<br>
+                            அன்புடன் ஸ்ரீ ராம் திருமண தகவல் மையம்.</p>
+                        </div>
+
+                      </div>
+
+
+                      <div class="title-card" style="padding: 30px 0px;">
+                        <h3 style="font-size: 1.6rem;
+                        text-align: center;
+                        font-weight: 500;
+                        color: #99180b;">Premium Members</h3>
+                        <p style="text-align: center;">Every Premium member on Sriram Matrimony is privileged by our policy & rules so you don’t have to worry about your privacy or security.</p>
+                      </div>
+                      <section class="hero-slider-2" style="width:1149px;">
+                        
+                        <figure class="snip1527">
+                          <div class="image"><img src="images/profile-1.png" alt="pr-sample23" /></div>
+                          <figcaption>
+                            <h3>Sivakumar S</h3>
+                            <p>Member Id:MM-2020201</p>
+                            <p>Religion:Hindu</p>
+                            <p>Caste:Nadar</p>
+                          </figcaption>
+                          <a href="#"></a>
+                        </figure>
+
+                        <figure class="snip1527">
+                          <div class="image"><img src="images/profile-2.png" alt="pr-sample23" /></div>
+                          <figcaption>
+                            <h3>Priyadarshini P</h3>
+                            <p>Member Id:MM-2020202</p>
+                            <p>Religion:Hindu</p>
+                            <p>Caste:Chettiyar</p>
+                          </figcaption>
+                          <a href="#"></a>
+                        </figure>
+
+                        <figure class="snip1527">
+                          <div class="image"><img src="images/profile-3.png" alt="pr-sample23" /></div>
+                          <figcaption>
+                            <h3>Akshaya K</h3>
+                            <p>Member Id:MM-2020203</p>
+                            <p>Religion:Hindu</p>
+                            <p>Caste:Nadar</p>
+                          </figcaption>
+                          <a href="#"></a>
+                        </figure>
+
+                        <figure class="snip1527">
+                          <div class="image"><img src="images/profile-4.png" alt="pr-sample23" /></div>
+                          <figcaption>
+                            <h3>Ashok Kumar</h3>
+                            <p>Member Id:MM-2020204</p>
+                            <p>Religion:Hindu</p>
+                            <p>Caste:Nadar</p>
+                          </figcaption>
+                          <a href="#"></a>
+                        </figure>
+
+
+                        
+                        
+                        
+                      </section>
+                    </td>
+                  </tr>
+                  <tr style="height: 30px;">
+                    <td align="center" style="padding:5px; vertical-align:middle;">
+
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <td valign="top" width="100">
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align:center">
+          <table border="0" cellpadding="0" cellspacing="0" width="1159px" align="center">
+            <tr style="height:20px;">
+              <td>&nbsp;</td>
+            </tr>
+            <style>
+              .font_success {
+                font-family: cursive;
+              }
+
+              /* Keyframe animation for card */
+              @keyframes fadeInUp {
+                0% {
+                  opacity: 0;
+                  transform: translateY(50px);
+                }
+
+                100% {
+                  opacity: 1;
+                  transform: translateY(0);
+                }
+              }
+
+              /* Apply fadeInUp animation */
+              .animate-card {
+                animation: fadeInUp 0.6s ease-out forwards;
+              }
+
+              /* Delay animation for each card */
+              .success-stories-cards .story-card:nth-child(1) {
+                animation-delay: 0.2s;
+              }
+
+              .success-stories-cards .story-card:nth-child(2) {
+                animation-delay: 0.4s;
+              }
+
+              .success-stories-cards .story-card:nth-child(3) {
+                animation-delay: 0.6s;
+              }
+
+              /* Hover effect */
+              .story-card:hover {
+                transform: scale(1.05);
+                transition: transform 0.3s ease-in-out;
+              }
+            </style>
+            <script>
+              $(document).ready(function () {
+                $('.hero-slider').slick({
+                  dots: true,
+                  infinite: true,
+                  speed: 500,
+                  fade: true,
+                  cssEase: 'linear',
+                  autoplay: true,
+                });
+                $('.success-stories-slider').slick({
+                  slidesToShow: 3,
+                  slidesToScroll: 1,
+                  dots: false,
+                  infinite: true,
+                  speed: 500,
+                  responsive: [
+                    {
+                      breakpoint: 1024,
+                      settings: {
+                        slidesToShow: 2
+                      }
+                    },
+                    {
+                      breakpoint: 600,
+                      settings: {
+                        slidesToShow: 1
+                      }
+                    }
+                  ]
+                });
+
+                // Toggle Navigation
+                $('#burger-icon').click(function () {
+                  $('#nav').toggleClass('hidden');
+                });
+              });
+            </script>
+
+            <script>
+              $(document).ready(function () {
+                $('.hero-slider-2').slick({
+                  dots: true,
+                  infinite: true,
+                  speed: 500,
+                  slidesToShow: 3, // Show 3 items in one slide
+                  slidesToScroll: 1, // Scroll one slide at a time
+                  autoplay: false,
+                  autoplaySpeed: 2000,
+                  responsive: [
+                    {
+                      breakpoint: 1024, // Tablet
+                      settings: {
+                        slidesToShow: 2, // Show 2 slides on tablet
+                        slidesToScroll: 1
+                      }
+                    },
+                    {
+                      breakpoint: 768, // Mobile
+                      settings: {
+                        slidesToShow: 1, // Show 1 slide on mobile
+                        slidesToScroll: 1
+                      }
+                    }
+                  ]
+                });
+              });
+            </script>
+            <script>
+              // Get references to the popup and buttons
+              const joinButton = document.querySelectorAll('.login-trigger');
+
+              const closeButton = document.getElementById('close-popup');
+              const popup = document.getElementById('login-popup');
+
+              // Show the popup with animation
+              function show_Form() {
+                console.log("hello");
+
+                popup.classList.add('show-popup');
+                popup.classList.remove('hidden');
+              };
+
+              // Close the popup
+              function close_form() {
+                popup.classList.remove('show-popup');
+                popup.classList.add('hidden');
+
+              };
+            </script>
+            <%- include('header_footer/footer')%>

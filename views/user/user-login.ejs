@@ -1,0 +1,269 @@
+<%- include('header_footer/header')%>
+    <style>
+        .log_in {
+            border-width: 0px;
+            padding: 3px 24px;
+            background: #fab12f;
+            color: white;
+            border-radius: 7px;
+            font-weight: 600;
+        }
+    </style>
+    <tr>
+        <td valign="top">
+            <table border="0" cellpadding="0" cellspacing="0" width="976px" align="center">
+                <tr>
+                    <td style="width:550px; text-align:center">
+                        <span style="font-size:20px; color:#e30e15; font-weight:bold; line-height:30px;">ஸ்ரீ ராம்
+                            மேட்ரிமோனி <br>
+                            திருமண அறிவிப்பு இணையதளம் <br>
+                            உங்களின் வாழ்வியல் இணையை கண்டறிய <br>
+                            அன்புடன் வரவேற்கிறது!</span>
+                    </td>
+                </tr>
+            </table>
+            <table border="0" cellpadding="0" cellspacing="0" width="976px" align="center"
+                class=" mx-auto bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden">
+                <tr>
+                    <td>
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="background: #ffff84;">
+                            <tr>
+                                <td style=" background-repeat: repeat-x;
+                height: 39px;">
+                                    <span style="font-size: 23px; color: #69AF00; font-family: Georgia; font-weight: bold;
+                    padding: 10px;"><i>&nbsp;</i></span>
+                                </td>
+                            </tr>
+
+                            <tr>
+
+                                <td class="" align="center">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr>
+
+                                            <td>&nbsp;</td>
+                                            <td style="background-repeat: no-repeat;
+                                            background-position: center; height: 239px; width:338px;" valign="top">
+                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                    <tr>
+
+                                                    </tr>
+                                                    <tr style="height:10px;">
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="background-position: center; height: 239px; width:338px;"
+                                                            valign="top">
+                                                            <span style="font-size: 23px; color: #e30e15; font-family: Georgia; font-weight: bold;
+                                                                                        padding: 10px;"><i>Login
+                                                                </i></span>
+                                                            <p>&nbsp;</p>
+                                                            <p>&nbsp;</p>
+                                                            <table border="0" cellpadding="0" cellspacing="0"
+                                                                width="100%">
+                                                                <tr>
+
+                                                                    <td align="left">
+                                                                        <table border="0" cellpadding="0"
+                                                                            cellspacing="0" width="250">
+
+
+
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <form submit="submit_form(event)">
+                                                                                        <table border="0"
+                                                                                            cellpadding="0"
+                                                                                            cellspacing="0"
+                                                                                            width="300px">
+                                                                                            <tr>
+                                                                                                <td class="Label">
+                                                                                                    Member
+                                                                                                    ID
+                                                                                                    /
+                                                                                                    Email
+                                                                                                </td>
+                                                                                                <td align="right">
+                                                                                                    &nbsp;&nbsp;&nbsp;<input
+                                                                                                        style="border: 1px solid #efcfcf;"
+                                                                                                        name="username"
+                                                                                                        type="text"
+                                                                                                        id="txtusername"
+                                                                                                        style="width:150px;" />
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr style="height: 10px;">
+                                                                                                <td>
+
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td class="Label">
+                                                                                                    Password
+                                                                                                </td>
+                                                                                                <td align="right">
+                                                                                                    &nbsp;&nbsp;&nbsp;<input
+                                                                                                        style="border: 1px solid #efcfcf;"
+                                                                                                        name="password"
+                                                                                                        type="password"
+                                                                                                        id="txtpassword"
+                                                                                                        style="width:150px;" />
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr style="height: 10px;">
+                                                                                                <td>&nbsp;
+
+                                                                                                </td>
+                                                                                                <td align="right">
+                                                                                                    <a id="LinkButton1"
+                                                                                                        class="Grid_Link"
+                                                                                                        href="javascript:__doPostBack('LinkButton1','')"
+                                                                                                        style="color:Red;font-size:11px;">Forgot
+                                                                                                        Password?</a>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td>&nbsp;
+
+                                                                                                </td>
+                                                                                                <td align="right">
+                                                                                                    <span
+                                                                                                        id="Span1"></span>
+
+                                                                                                    <button class="bg-[#fab12f] rounded px-3 text-white">Login</button>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                        </table>
+
+                                                                                    </form>
+                                                                                    <script>
+                                                                                        // Function to handle form submission
+                                                                                        async function submit_form(event) {
+                                                                                            event.preventDefault(); // Prevent the default form submission
+                                                                                            const username = document.getElementById('txtusername').value;
+                                                                                            const password = document.getElementById('txtpassword').value;
+
+                                                                                            if (!username || !password) {
+                                                                                                alert('Please enter both username and password.');
+                                                                                                return;
+                                                                                            }
+                                                                                            try {
+                                                                                                const response = await fetch('/user_login', {
+                                                                                                    method: 'POST', // Specify the HTTP method
+                                                                                                    headers: {
+                                                                                                        'Content-Type': 'application/json', // Indicate the content type
+                                                                                                    },
+                                                                                                    body: JSON.stringify({ username, password }), // Convert data to JSON
+                                                                                                });
+
+                                                                                                if (response.ok) {
+                                                                                                    const result = await response.json();
+                                                                                                    // Ensure success and message are correctly accessed from the response
+                                                                                                    if (result.success) {
+                                                                                                        const token = result.token;
+                                                                                                        setChookie('user_token', token);
+                                                                                                        const get_token = getCookie("user_token");
+                                                                                                        const id = decodeJWT(token);
+                                                                                                        // console.log(id.id);
+                                                                                                        const status = "edit";
+                                                                                                        alert('Login successful!');
+                                                                                                        window.location.href = `/profile?user=${id.id}&status=${status}`;
+                                                                                                    } else {
+                                                                                                        alert(result.message || 'Login failed. Please try again.');
+                                                                                                    }
+                                                                                                } else {
+                                                                                                    // Handle HTTP response errors (e.g., 4xx, 5xx status codes)
+                                                                                                    const errorText = await response.text();
+                                                                                                    console.error('Response Error:', errorText);
+                                                                                                    alert('An error occurred. Please try again later.');
+                                                                                                }
+                                                                                            } catch (error) {
+                                                                                                // Handle network or unexpected errors
+                                                                                                console.error('Error during login:', error);
+                                                                                                alert('An unexpected error occurred.');
+                                                                                            }
+                                                                                        }
+                                                                                        function setChookie(name, value) {
+                                                                                            const now = new Date();
+                                                                                            now.setTime(now.getTime() + 24 * 16 * 1000);
+                                                                                            const expire = "expires" + now.toUTCString();
+                                                                                            document.cookie = `${name}=${value}; ${expire}; path=/`;
+                                                                                        }
+                                                                                        function getCookie(name) {
+                                                                                            const cookies = document.cookie.split("; ");
+                                                                                            for (cookie of cookies) {
+                                                                                                const [key, value] = cookie.split("=");
+                                                                                                if (key === name) {
+                                                                                                    return value;
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                        function decodeJWT(token) {
+                                                                                            const base64Url = token.split('.')[1]; // Get the payload part
+                                                                                            const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/'); // Replace URL-safe chars
+                                                                                            const jsonPayload = decodeURIComponent(
+                                                                                                atob(base64)
+                                                                                                    .split('')
+                                                                                                    .map(c => `%${('00' + c.charCodeAt(0).toString(16)).slice(-2)}`)
+                                                                                                    .join('')
+                                                                                            );
+
+                                                                                            return JSON.parse(jsonPayload);
+                                                                                        }
+
+                                                                                        // Attach the function to the form's onsubmit event
+                                                                                        document.querySelector('form').onsubmit = submit_form;
+                                                                                    </script>
+
+
+
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                            <td style="width:20px;">&nbsp;</td>
+                                            <td style="width:550px; text-align:center">
+
+                                                <span style="color:#515151; font-size:14px;">
+                                                    <span class="text-[#e30e15]"> குறிப்பு :</span><br />விளம்பர கட்டணம்
+                                                    செலுத்தாதவரன்
+                                                    விபரங்கள் விளம்பரம் செய்ய இயலாது<br />
+                                                    செலுத்திய விளம்பர கட்டணம் திருப்பி பெற
+                                                    முடியாது<br />
+                                                    திருமணம் முடிந்தவர்கள் வேறு எந்த கட்டணமோ
+                                                    கமிஷனோ செலுத்த தேவை இல்லை <br />
+                                                    திருமண அழைப்பிதழில் நன்றி செலுத்த நினைத்தால்
+                                                    ;<br />
+                                                    நன்றி : ஸ்ரீ ராம் மேட்ரிமோனி 9 .புது தெரு (BSNL
+                                                    பக்கத்தில்) செய்யாறு-604407 <a
+                                                        href="http://www.thillaimatrimony.org/">www.thillaimatrimony.org</a>
+                                                    செல்:9489331973
+                                                </span>
+                                            </td>
+
+                                            <td>&nbsp;</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="background-image: url(); background-repeat: repeat-x;
+                height: 39px;">
+                                    <span style="font-size: 23px; color: #69AF00; font-family: Georgia; font-weight: bold;
+                    padding: 10px;"><i>&nbsp;</i></span>
+                                </td>
+                            </tr>
+                            <tr style="height: 5px;">
+                                <td>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <%- include('header_footer/footer')%>

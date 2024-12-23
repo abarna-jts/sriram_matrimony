@@ -1,0 +1,239 @@
+/* CSS Document */
+body
+{
+margin:0px;
+}
+.bgcolor
+{
+background-color:#ffe27c
+}
+.align
+{
+	padding:50px;
+	text-align:center;
+
+}
+.welcometxt
+{
+	font-family:Arial, Helvetica, sans-serif;
+	color: #69AF00;
+	font-size:12px;
+	font-weight:bold;
+}
+a.Logout
+{
+font-family:Arial, Helvetica, sans-serif;
+font-size:15px;
+color:#3366FF;
+text-decoration:none;
+font-weight:bold;
+}
+a.Logout:hover
+{
+font-family:Arial, Helvetica, sans-serif;
+font-size:15px;
+color:#000000;
+}
+.link
+{
+font-family:Arial, Helvetica, sans-serif;
+color:#69AF00;
+font-size:12px;
+text-align:center;
+border-left:solid 1px #FFFFFF;
+text-decoration:none;
+font-weight:bold;
+}
+.link:hover
+{
+	text-decoration:underline;
+}
+.tamil
+{
+text-align:center;
+color:#990000;
+font-family:Arial, Helvetica, sans-serif;
+font-size:14px;
+}
+.tamil
+{
+border-right:solid 1px #990000
+}
+
+.Wedding
+{
+font-family:Arial, Helvetica, sans-serif;
+font-size:16px;
+color:#FFFFFF;
+text-align:center;
+letter-spacing:1px;
+background-color:#990000;
+height:30px
+}
+.list
+{
+font-family:Arial, Helvetica, sans-serif;
+padding-left:20px;
+color:#990000;
+text-align:left;
+border-bottom:solid 1px #FFFFFF;
+font-size:12px;
+height:25px
+}
+.p
+{
+font-family:Arial, Helvetica, sans-serif;
+font-size:12px;
+color:#FF0000;
+padding:5px;
+text-align:justify;
+ line-height:24px;
+}
+.Label12
+{
+	font-family:Arial, Helvetica, sans-serif;
+font-size:14px;
+color:#555555;
+font-weight:bold;
+}
+.welcome
+{
+font-family:Arial, Helvetica, sans-serif;
+font-size:15px;
+color:#990000;
+padding:10px
+}
+.head
+{
+font-family:Arial, Helvetica, sans-serif;
+color:#002E5B;
+font-size:12px;
+padding:5px;
+text-align:justify
+}
+.sublink
+{
+text-decoration:none;
+color:#990000;
+}
+.mainlink
+{
+text-decoration:none;
+color:#FFFFFF
+}
+.indexform
+{
+font-family:Arial, Helvetica, sans-serif;
+color:#FFFFFF;
+background-color:#eb0000;
+font-size:12px
+}
+.select
+{
+width:100px
+}
+
+.wselect
+{
+width:150px
+}
+.hight
+{
+height:30px;
+vertical-align:middle;
+font-family:Arial, Helvetica, sans-serif;
+color:#555555;
+font-size:12px;
+padding-right:20px;
+text-align:left;
+font-weight:bold;
+}
+.Label
+{
+color:#2E2E2E;
+font-size:14px;
+font-family:Arial;
+padding:2px;
+letter-spacing:1px;
+}
+.TextBox
+{
+color:#2E2E2E;
+font-size:11px;
+font-family:Arial;
+border:1px solid #999966;
+	height: 18px;
+}
+.TextBox_Cap
+{
+color:#2E2E2E;
+font-size:11px;
+font-family:Arial;
+height:15px;
+text-transform:capitalize;
+}
+.dd_NoWidth
+{
+	font-family:Trebuchet MS;
+	font-size:11px;
+	color:#646464;
+	border:1px solid #555555;
+	height: 20px;
+}
+.dd_NoWidth_WhiteBorder
+{
+	font-family:Trebuchet MS;
+	font-size:11px;
+	color:#646464;
+	height:20px;
+	border:1px solid #ffffff;
+}
+.Label_Head
+{
+	font-family:Arial;
+	font-size:16px;
+	color:green;	
+	padding:10px;
+	padding-left:30px;
+	font-weight:bold;
+}
+.Grid_Header
+{
+	font-family:Arial;
+	font-size:12px;
+	color:#ffffff;
+	height:30px;
+	vertical-align:middle;	
+	background-color:#006633;
+	text-align:center;
+	width:100px;
+	text-decoration:none;
+}
+.Grid_Content
+{
+	font-family:Arial;
+	font-size:12px;
+	color:#002E5B;
+	text-align:center;
+	vertical-align:middle;
+	text-transform :capitalize;	
+	text-decoration:none;
+}	
+a.Grid_Link
+{
+	font-family:Arial;
+	font-size:12px;
+	color:#006633;
+	text-align:center;
+	vertical-align:middle;
+	text-decoration:none;		
+}
+a.Grid_Link:hover
+{
+	font-family:Arial;
+	font-size:12px;
+	color:black;
+	text-align:center;
+	vertical-align:middle;	
+	text-decoration:none;	
+}
